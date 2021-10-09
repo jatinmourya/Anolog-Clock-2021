@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #292929;
+}
+
+.clock {
+  height: 500px;
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("clock.png");
+  background-size: 100%;
+  border: 5px solid #303030;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05), inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.2), inset 0 15px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05), inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.2), inset 0 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.clock::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #777777;
+  z-index: 100;
+}
+
+.hour,
+.minute,
+.second {
+  position: absolute;
+}
+
+.clock .hr {
+  height: 240px;
+  width: 240px;
+}
+
+.clock .mn {
+  height: 300px;
+  width: 300px;
+}
+
+.clock .sc {
+  height: 360px;
+  width: 360px;
+}
+
+.hr,
+.mn,
+.sc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hr::before {
+  content: "";
+  position: absolute;
+  height: 120px;
+  width: 8px;
+  z-index: 10;
+  background-color: #54ff10;
+}
+
+.mn::before {
+  content: "";
+  position: absolute;
+  height: 150px;
+  width: 6px;
+  z-index: 11;
+  background-color: #777777;
+}
+
+.sc::before {
+  content: "";
+  position: absolute;
+  height: 180px;
+  width: 3px;
+  z-index: 12;
+  background-color: #777777;
+}
+/*# sourceMappingURL=style.css.map */
